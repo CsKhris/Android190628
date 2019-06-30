@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
         }else if(requestCode == 200){
 
             // Camera App에서 넘겨 받은 Image를 Image View에 출력
-            Bitmap bitmap = (Bitmap)intent.getExtras().get("data");
+            bitmap = (Bitmap)intent.getExtras().get("data");
             resultitemview.setImageBitmap(bitmap);
         }
     }
